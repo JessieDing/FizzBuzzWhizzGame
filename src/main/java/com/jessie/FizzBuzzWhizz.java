@@ -14,31 +14,23 @@ public class FizzBuzzWhizz {
         int whizzNum = Integer.parseInt(numberArr[2]);
 
         for (int i = 1; i < 101; i++) {
-            if (i % fizzNum == 0) {
-                System.out.print(" Fizz");
-            }
-            if (i % buzzNum == 0) {
-                System.out.print(" Buzz");
-            }
-            if (i % whizzNum == 0) {
-                System.out.print(" Whizz");
-            }
-            if (i % fizzNum == 0 & i % buzzNum == 0) {
-                System.out.print(" FizzBuzz");
-            }
-            if (i % fizzNum == 0 & i % whizzNum == 0) {
-                System.out.print(" FizzWhizz");
-            }
-            if (i % buzzNum == 0 & i % whizzNum == 0) {
-                System.out.print(" BuzzWhizz");
-            }
             if (i % fizzNum == 0 & i % buzzNum == 0 & i % whizzNum == 0) {
-                System.out.print(" FizzBuzzWhizz");
+                System.out.println(" FizzBuzzWhizz");
+            } else if (i % fizzNum == 0 & i % buzzNum == 0) {
+                System.out.println(" FizzBuzz");
+            } else if (i % fizzNum == 0 & i % whizzNum == 0) {
+                System.out.println(" FizzWhizz");
+            } else if (i % buzzNum == 0 & i % whizzNum == 0) {
+                System.out.println(" BuzzWhizz");
+            } else if (i % fizzNum == 0 || String.valueOf(i).contains(numberArr[0])) {
+                System.out.println(" Fizz");
+            } else if (i % buzzNum == 0) {
+                System.out.println(" Buzz");
+            } else if (i % whizzNum == 0) {
+                System.out.println(" Whizz");
+            } else {
+                System.out.println(i + "");
             }
-            if (String.valueOf(i).contains(numberArr[0])) {
-                System.out.print(" Fizz");
-            }
-            System.out.println(i + "");
         }
     }
 }
