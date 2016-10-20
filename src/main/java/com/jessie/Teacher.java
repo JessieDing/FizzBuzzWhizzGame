@@ -19,6 +19,8 @@ public class Teacher {
         fizzHandler.setNextHandler(buzzHandler);
         buzzHandler.setNextHandler(whizzHandler);
 
+        //链状结果，defaultFizzHandler是第一个有NextHandler的，因此确保为第一位处理
+
         return defaultFizzHandler;
     }
 }
