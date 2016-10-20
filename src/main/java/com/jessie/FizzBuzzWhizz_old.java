@@ -2,7 +2,7 @@ package com.jessie;
 
 import java.util.Scanner;
 
-public class FizzBuzzWhizz {
+public class FizzBuzzWhizz_old {
 
     public static void main(String[] args) {
         System.out.println("老师报三个数（1到9）");
@@ -15,7 +15,7 @@ public class FizzBuzzWhizz {
 
         for (int i = 1; i < 101; i++) {
             if (i % fizzNum == 0 & i % buzzNum == 0 & i % whizzNum == 0) {
-                System.out.println(" FizzBuzzWhizz");
+                System.out.println(" FizzBuzzWhizz_old");
             } else if (i % fizzNum == 0 & i % buzzNum == 0) {
                 System.out.println(" FizzBuzz");
             } else if (i % fizzNum == 0 & i % whizzNum == 0) {

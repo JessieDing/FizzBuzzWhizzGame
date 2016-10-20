@@ -6,7 +6,7 @@ public class FizzBuzzWhizzHandler extends BaseHandler {
         String result = String.valueOf(number);
         int fizzNumber = 3;
         int buzzNumber = 5;
-        int whizzNumber = 5;
+        int whizzNumber = 7;
         if (number % fizzNumber == 0
                 && number % buzzNumber == 0
                 && number % whizzNumber == 0) {
