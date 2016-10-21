@@ -18,15 +18,18 @@ public class Teacher {
         buzzWhizzHandler.setNextHandler(fizzHandler);
         fizzHandler.setNextHandler(buzzHandler);
         buzzHandler.setNextHandler(whizzHandler);
+        return defaultFizzHandler;
+    }
+}
 
-        //设置职责链
-        //链状结构，defaultFizzHandler是第一个有NextHandler的，因此确保为第一位处理
+
+//设置职责链
+//链状结构，defaultFizzHandler是第一个有NextHandler的，因此确保为第一位处理
         /*
         职责链模式：
         使多个对象都有机会处理请求，从而避免请求的发送者和接收者之间的耦合关系。
         将这个对象连成一条链，并沿着这条链传递该请求，知道有一个对象处理它为止。
          */
 
-        return defaultFizzHandler;
-    }
-}
+
+

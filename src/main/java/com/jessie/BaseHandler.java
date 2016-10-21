@@ -11,5 +11,5 @@ public abstract class BaseHandler {
         this.nextHandler = handler;
     }
 
-    public abstract String getResult(int number);
+    public abstract String getResult(int number,NumberProcessor specialNumber);
 }

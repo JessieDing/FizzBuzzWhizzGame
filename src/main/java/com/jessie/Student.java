@@ -7,9 +7,11 @@ public class Student {
         this.rule = baseHandler;
     }
 
-    public String report(int number) {
+    public String report(int number,NumberProcessor specialNumber) {
+
+
         if (rule != null) {
-            return rule.getResult(number);
+            return rule.getResult(number,specialNumber);// null ???
         }
         return String.valueOf(number);
     }
