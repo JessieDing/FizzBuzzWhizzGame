@@ -14,7 +14,7 @@ public class Application {
         Student student = new Student();
         student.setRule(rule);
 
-        for (int number = 0; number <= 315; number++) {
+        for (int number = 1; number <= 315; number++) {
             String result = student.report(number,numberProcessor);
             System.out.println(result);
         }
