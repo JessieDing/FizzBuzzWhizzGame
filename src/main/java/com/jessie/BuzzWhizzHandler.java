@@ -2,7 +2,7 @@ package com.jessie;
 
 public class BuzzWhizzHandler extends BaseHandler {
     @Override
-    public String getResult(int number,NumberProcessor specialNumber) {
+    public String getResult(int number, NumberProcessor specialNumber) {
         String result = String.valueOf(number);
         int buzzNumber = specialNumber.getBuzzNumber();
         int whizzNumber = specialNumber.getWhizzNumber();
@@ -10,7 +10,7 @@ public class BuzzWhizzHandler extends BaseHandler {
             result = "BuzzWhizz";
         }
         if (!result.equals("BuzzWhizz") && this.getNextHandler() != null) {
-            return this.getNextHandler().getResult(number,specialNumber);
+            return this.getNextHandler().getResult(number, specialNumber);
         }
         return result;
     }

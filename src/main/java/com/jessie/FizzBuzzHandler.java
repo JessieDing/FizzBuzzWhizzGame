@@ -10,7 +10,7 @@ public class FizzBuzzHandler extends BaseHandler {
             result = "FizzBuzz";
         }
         if (!result.equals("FizzBuzz") && this.getNextHandler() != null) {
-            return this.getNextHandler().getResult(number,specialNumber);
+            return this.getNextHandler().getResult(number, specialNumber);
         }
         return result;
     }
